@@ -11,3 +11,7 @@ $(function () {
           featuers   = $('.featuers').innerHeight();
           $('.next-term').height(win2H -( footer +featuers));    
 });
+
+$(window).scroll(function(){
+  $('nav').toggleClass('scrolled', $(this).scrollTop() > 600);
+  });
